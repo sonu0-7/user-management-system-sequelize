@@ -1,0 +1,40 @@
+<!-- Modal -->
+<div class="modal fade" id="editProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Edit the Product</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm" method="post">
+                    <div class="mb-3">
+                        <input type="hidden" name="_id" id="productId" />
+                        <label for="productTitle">Product Title</label>
+                        <input type="text" name="title" id="productTitle" class="form-control"
+                            placeholder="Enter the product title" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="name">Product Name</label>
+                        <input type="text" name="name" id="productName" class="form-control"
+                            placeholder="Enter the product name" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="price">Product Price</label>
+                        <input type="int" name="price" id="productPrice" class="form-control"
+                            placeholder="Enter the product price" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantity">Product Quantity</label>
+                        <input type="int" name="quantity" id="productQuantity" class="form-control"
+                            placeholder="Enter the product quantity" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-outline-success savebtn">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
